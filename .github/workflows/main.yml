@@ -22,8 +22,8 @@ jobs:
     # Étape 3 : Construire et pousser l'image
     - name: Build and push Docker image
       run: |
-        docker build -t zenitsu2001/test1:latest .
-        docker push zenitsu2001/test1:latest
+        docker build -t zenitsu2001/test1 .
+        docker push zenitsu2001/test1
 
   deploy:
     runs-on: ubuntu-latest
