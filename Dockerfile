@@ -5,7 +5,7 @@ FROM openjdk:22
 WORKDIR /app
 
 # Copier le fichier JAR généré dans le conteneur
-COPY --from=build target/test1-0.0.1-SNAPSHOT.jar test1.jar
+COPY target/test1-0.0.1-SNAPSHOT.jar test1.jar
 
 # Exposer le port sur lequel le microservice Spring Boot sera accessible
 EXPOSE 9000
