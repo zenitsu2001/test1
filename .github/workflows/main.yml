@@ -13,7 +13,7 @@ jobs:
     steps:
     # Étape 1 : Cloner le code source
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v2 
 
     # Étape 2 : Configurer Docker
     - name: Log in to Docker Hub
