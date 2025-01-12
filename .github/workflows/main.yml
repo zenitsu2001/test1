@@ -22,8 +22,6 @@ jobs:
     # Étape 3 : Construire et pousser l'image
     - name: Build and push Docker image
       run: 
-        docker build -t test1 .
-        docker tag test1:latest zenitsu2001/test1:latest
         docker push zenitsu2001/test1:latest
 
   deploy:
