@@ -21,7 +21,7 @@ jobs:
 
     # Étape 3 : Construire et pousser l'image
     - name: Build and push Docker image
-      run: 
+      run: |
         docker push zenitsu2001/test1:latest
 
   deploy:
