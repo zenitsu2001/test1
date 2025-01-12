@@ -15,7 +15,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2 
 
-    # Étape 2 : Configurer Docker
+    # Étape 2 : Configurer Docker 
     - name: Log in to Docker Hub
       run: echo ${{ secrets.PASSWORD_SECRET1 }} | docker login -u ${{ secrets.SECRET1 }} --password-stdin
 
